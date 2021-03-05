@@ -1,3 +1,15 @@
+## Dev Notes
+
+Add username and password to line 4 within /database/index.js
+
+
+
+
+____________________________________________________________________________________________________________
+## NEXT.js NOTES
+____________________________________________________________________________________________________________
+
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
