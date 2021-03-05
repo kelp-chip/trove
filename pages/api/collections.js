@@ -1,5 +1,4 @@
-import db from '../../database';
-
+import { getCollection } from '../../database';
 export default (req, res) => {
-  db.getCollection((collection) => res.send(collection));
-}
+  getCollection((collection) => res.send(collection));
+};
