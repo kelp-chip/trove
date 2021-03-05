@@ -1,8 +1,6 @@
-// import pkg from 'mongodb';
-// const {MongoClient} = pkg;
 require('dotenv').config();
 const { MongoClient } = require('mongodb');
-const uri = process.env.URI;
+const uri = `mongodb+srv://${process.env.USER}:${process.env.PW}>@cluster0.aggji.mongodb.net/myFirstDatabase?retryWrites=true&w=majority`;
 const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true });
 
 
