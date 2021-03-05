@@ -1,8 +1,9 @@
 require('dotenv').config();
 const { MongoClient } = require('mongodb');
-const uri = `mongodb+srv://${process.env.USER}:${process.env.PW}>@cluster0.aggji.mongodb.net/myFirstDatabase?retryWrites=true&w=majority`;
-const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true });
 
+const uri = `mongodb+srv://${process.env.DB}:${process.env.PW}>@cluster0.aggji.mongodb.net/myFirstDatabase?retryWrites=true&w=majority`;
+const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true });
+console.log("URI: ", uri);
 
 const getCollection = function (cb) {
   client.connect(err => {
