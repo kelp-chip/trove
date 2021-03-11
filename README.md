@@ -1,7 +1,17 @@
-## Dev Notes
+# [ trove ]
+Trove is a collection management web application.
 
-Add username and password to line 4 within /database/index.js
+## Documentation
 
+1. fork and clone the repo
+2. Run ```npm install``` script in the terminal
+3. create a .env.local file
+
+copy and paste the following into it:
+```
+DB_USER=<Ask Trove Team>
+DB_PASSWORD=<Ask Trove Team>
+```
 
 
 
