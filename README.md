@@ -3,7 +3,7 @@
 # ****
 
 # [ trove ]
-Trove is a collection management web application.
+Trove is a web application that enables users to create and manage collections and personal inventories.
 
 ## Documentation
 
