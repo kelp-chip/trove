@@ -1,3 +1,7 @@
+# **** Alert 
+### if you downloaded before 3/12 make sure to change .env values to reflect change below. (changed user and db key names)
+# ****
+
 # [ trove ]
 Trove is a collection management web application.
 
