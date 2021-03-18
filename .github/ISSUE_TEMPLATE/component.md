@@ -7,9 +7,6 @@ assignees: ''
 
 ---
 
-**Title**
-Name of the component
-
 **Description**
 Short description of the component
 
@@ -18,3 +15,6 @@ Relevant paths
 
 **Extended Description**
 Longer description of the component if needed
+
+**Issue Tracking**
+Include issue number (e.g. #2)
