@@ -13,6 +13,8 @@ export default function Home() {
       .catch(err => console.error(err));
   }, []);
   return (
+
+    <div>
     <Layout>
       <div>
         <div>
@@ -23,6 +25,6 @@ export default function Home() {
         </div>
       </div>
     </Layout>
-
+  </div>
   );
 }
