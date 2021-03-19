@@ -1,0 +1,34 @@
+
+.editBtn {
+  background: #FAFBFC;
+  border-color:#D9DBDB
+}
+
+.closeBtn {
+  background: #EFEFEF;
+  border-color:#C2C2C2;
+}
+
+.saveBtn {
+  color: #FFFFFF;
+  background: #62AD81;
+  border-color:#4b9d6d;
+}
+
+.cancelBtn {
+  color: #FFFFFF;
+  background: #CB613C;
+  border-color:#AE5C40;
+}
+
+.deleteBtn {
+  background: transparent;
+  border-color:#CB613C;
+  color: #CB613C;
+}
+
+.addFieldBtn {
+  background: #B7C8D2;
+  border-color:#9CB9CA;
+  color: #000000;
+}

@@ -120,3 +120,35 @@
     flex-direction: column;
   }
 }
+
+.buttonContainer {
+  display: flex;
+  flex-direction: column;
+  width: 100px;
+  justify-content: space-around;
+  margin: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
