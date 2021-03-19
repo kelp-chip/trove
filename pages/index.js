@@ -1,9 +1,8 @@
 import Head from 'next/head';
-import styles from '../styles/Home.module.css';
 import dark from '../styles/base-dark.module.css';
 import light from '../styles/base-light.module.css';
 import { useEffect, useState } from 'react';
-import Layout from '../components/layout';
+import Layout from '../components/layout/index';
 
 
 export default function Home() {

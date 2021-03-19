@@ -5,14 +5,15 @@ const uri = `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASSWORD}@clu
 const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true });
 console.log("URI: ", uri);
 
-const getCollection = function (cb) {
+const getCollections = function (user_id, cb) {
   client.connect(err => {
     const collection = client.db("trove").collection("users");
-    collection.find({}).toArray((err, result) => {
+    collection.findOne({ id: user_id }, (err, result) => {
       if (err) throw err;
       cb(result);
     });
   });
 };
 
-module.exports = { getCollection };
+
+module.exports = { getCollections };
