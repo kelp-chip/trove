@@ -32,3 +32,43 @@
   border-color:#9CB9CA;
   color: #000000;
 }
+
+.redCollectionCard {
+  background: #CB613C;
+  color: #FFFFFF;
+}
+
+.blueCollectionCard {
+  background: #466679;
+  color: #FFFFFF;
+}
+
+.greenCollectionCard {
+  background: #62AD81;
+  color: #FFFFFF;
+}
+
+.yellowCollectionCard {
+  background: #F0D13F;
+  color: #FFFFFF;
+}
+
+.redItemCard {
+  background: #EBC6B9;
+  color: #000000;
+}
+
+.blueItemCard {
+  background: rgba(113, 148, 168, 0.37);
+  color: #000000;
+}
+
+.greenItemCard {
+background: #C6E0D1;
+color: #000000;
+}
+
+.yellowItemCard {
+  background: #F8EDBA;
+  color: #000000;
+}
