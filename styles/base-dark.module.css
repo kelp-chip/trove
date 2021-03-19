@@ -34,3 +34,43 @@
   border-color: #335060;
   color: #FFFFFF;
 }
+
+.redCollectionCard {
+  background: #B95A39;
+  color: #FFFFFF;
+}
+
+.blueCollectionCard {
+  background: #466679;
+  color: #FFFFFF;
+}
+
+.greenCollectionCard {
+  background: #5B9E77;
+  color: #FFFFFF;
+}
+
+.yellowCollectionCard {
+  background: #D0B63A;
+  color: #FFFFFF;
+}
+
+.redItemCard {
+  background: rgba(185, 90, 57, 0.8);
+  color: #FFFFFF;
+}
+
+.blueItemCard {
+  background: rgba(70, 102, 121, 0.8);
+  color: #FFFFFF;
+}
+
+.greenItemCard {
+  background: rgba(91, 158, 119, 0.8);
+  color: #FFFFFF;
+}
+
+.yellowItemCard {
+  background: rgba(208, 182, 58, 0.8);
+  color: #FFFFFF;
+}
