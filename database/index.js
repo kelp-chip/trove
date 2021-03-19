@@ -15,15 +15,5 @@ const getCollections = function (user_id, cb) {
   });
 };
 
-// const getCollection = function (cb) {
-//   client.connect(err => {
-//     const collection = client.db("trove").collection("users");
-//     collection.findOne({ id: 1 }, (err, result) => {
-//       if (err) throw err;
-//       cb(result);
-//     });
-//   });
-// };
-
 
 module.exports = { getCollections };
