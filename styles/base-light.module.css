@@ -1,0 +1,41 @@
+
+.editBtn {
+  border-radius: 5px;
+  background: #FAFBFC;
+  border: 1px solid #D9DBDB
+}
+
+.closeBtn {
+  background: #EFEFEF;
+  border: 1px solid #C2C2C2;
+  border-radius: 5px;
+}
+
+.saveBtn {
+  color: #FFFFFF;
+  background: #62AD81;
+  border: 1px solid #4b9d6d;
+  border-radius: 5px;
+}
+
+.cancelBtn {
+  color: #FFFFFF;
+  background: #CB613C;
+  border: 1px solid #AE5C40;
+  border-radius: 5px;
+}
+
+.deleteBtn {
+  background: transparent;
+  border: 1px solid #CB613C;
+  border-radius: 5px;
+  color: #CB613C;
+  width: 120px;
+}
+
+.addFieldBtn {
+  background: #B7C8D2;
+  border: 1px solid #9CB9CA;
+  border-radius: 5px;
+  color: #000000;
+}
