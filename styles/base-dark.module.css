@@ -1,43 +1,36 @@
 
 .editBtn {
   background: #1A1C1E;
-  border: 1px solid #3A3F42;
-  border-radius: 5px;
+  border-color: #3A3F42;
   color: #FFFFFF;
 }
 
 .closeBtn {
   background: #98A2A8;
-  border: 1px solid #B7c1c7;
+  border-color: #B7c1c7;
   color: #000000;
-  border-radius: 5px;
 }
 
 .saveBtn {
   color: #FFFFFF;
   background: #438065;
-  border: 1px solid #3C7D57;
-  border-radius: 5px;
+  border-color: #3C7D57;
 }
 
 .cancelBtn {
   color: #FFFFFF;
   background: #9D492A;
-  border: 1px solid #864831;
-  border-radius: 5px;
+  border-color: #864831;
 }
 
 .deleteBtn {
-  border: 1px solid #B95A39;
+  border-color: #B95A39;
   color: #B95A39;
-  border-radius: 5px;
   background: transparent;
-  width: 120px;
 }
 
 .addFieldBtn {
   background: #2F404B;
-border: 1px solid #335060;
-border-radius: 5px;
-color: #FFFFFF;
+  border-color: #335060;
+  color: #FFFFFF;
 }

@@ -19,17 +19,17 @@ export default function Home() {
   const click = () => {
     theme === dark ? setTheme(light) : setTheme(dark);
   };
-
+  console.log(data);
   return (
     <>
       <Layout>
-        <div>
+        {/* <div>
           <h1>Collections:{" "}</h1>
           {data ? data[0].collections.map((input) => (
             <div key={input.id}>{input.id}</div>
           )) : <span>Loading...</span>}
-        </div>
-        <div className={styles.buttonContainer}>
+        </div> */}
+        <div>
           <button onClick={click}>theme changer</button>
           Buttons
           <button className={theme.editBtn}>edit item</button>
