@@ -24,6 +24,22 @@ button {
   border: 1px solid;
 }
 
+table {
+  border-spacing: 5px 5px;
+  border-collapse: separate;
+}
+
+
+th {
+  padding: 5px 50px;
+  vertical-align: top;
+  margin-right: 8px;
+}
+
+td {
+  padding: 5px 35px;
+}
+
 .container {
   display: flex;
   flex-direction: row;
@@ -37,4 +53,8 @@ button {
   height: 100px;
   width: 150px;
   border-radius: 5px;
+}
+
+.tableContainer {
+  width: 75%;
 }

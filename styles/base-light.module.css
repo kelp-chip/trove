@@ -72,3 +72,15 @@ color: #000000;
   background: #F8EDBA;
   color: #000000;
 }
+
+.tr:nth-child(odd) {
+  background-color: #E3E3E3;
+}
+
+.tr:nth-child(even) {
+  background-color: #F7F7F7;
+}
+
+.page {
+  background-color: white;
+}
