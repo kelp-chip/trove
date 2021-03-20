@@ -74,3 +74,17 @@
   background: rgba(208, 182, 58, 0.8);
   color: #FFFFFF;
 }
+
+.tr:nth-child(odd) {
+  color: #FFFFFF;
+  background-color: #1D1F20;
+}
+
+.tr:nth-child(even) {
+  color: #FFFFFF;
+  background-color: #282B2D;
+}
+
+.page {
+  background-color: rgb(24, 26, 27)
+}
