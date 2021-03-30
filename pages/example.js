@@ -9,12 +9,12 @@ export default function Home() {
   const [data, setData] = useState(null);
   const [theme, setTheme] = useState(light);
 
-  useEffect(() => {
-    fetch('http://localhost:3000/api/collections')
-      .then(result => result.json())
-      .then(data => setData(data))
-      .catch(err => console.error(err));
-  }, []);
+  // useEffect(() => {
+  //   fetch('http://localhost:3000/api/collections')
+  //     .then(result => result.json())
+  //     .then(data => setData(data))
+  //     .catch(err => console.error(err));
+  // }, []);
 
   const click = () => {
     theme === dark ? setTheme(light) : setTheme(dark);

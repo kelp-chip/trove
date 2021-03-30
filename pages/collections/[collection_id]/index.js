@@ -4,21 +4,22 @@ import dark from '../../../styles/base-dark.module.css';
 import light from '../../../styles/base-light.module.css';
 import { useEffect, useState } from 'react';
 
-export default function Home() {
+export default function Collection() {
   const [data, setData] = useState(null);
   const [theme, setTheme] = useState(light);
-
-  useEffect(() => {
-    fetch('http://localhost:3000/api/collections')
-      .then(result => result.json())
-      .then(data => setData(data))
-      .catch(err => console.error(err));
-  }, []);
+  const [user, setUser] = useState(1)
+  // useEffect(() => {
+  //   fetch(`http://localhost:3000/api/collections/`)
+  //     .then(result => result.json())
+  //     .then(data => setData(data))
+  //     .catch(err => console.error(err));
+  // }, []);
 
   const click = () => {
     theme === dark ? setTheme(light) : setTheme(dark);
   };
   console.log(theme);
+  console.log(data)
 
   return (
        <>

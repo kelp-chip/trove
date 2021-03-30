@@ -5,18 +5,21 @@ const { MongoClient } = require("mongodb");
   const client = new MongoClient(uri, {useNewUrlParser: true, useUnifiedTopology: true});
 
   const getCollections = function (user_id, cb) {
+    // console.log("HEYY: ", user_id)
+
     client.connect(err => {
       if (err) throw err;
       const collection = client.db("trove").collection("users");
-      collection.findOne({ id: user_id}, (err, result) => {
+      collection.findOne({ _id: Number(user_id)}, (err, result) => {
         if (err) throw err;
-        console.log(result);
-        client.close()
+        console.log(result)
+        cb(result.collections);
+        // client.close()
       });
     });
   };
-  
-  getCollections(1)
+
+  // getCollections(1)
 
 // const getCollection = function (req, cb) {
 //   client.connect(err => {

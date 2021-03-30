@@ -1,25 +1,42 @@
 import Head from 'next/head';
+import Link from 'next/link';
 import dark from '../styles/base-dark.module.css';
 import light from '../styles/base-light.module.css';
 import { useEffect, useState } from 'react';
 import Layout from '../components/layout/index';
 
 
-export default function Home() {
-  const [data, setData] = useState(null);
-  const [theme, setTheme] = useState(light);
 
-  useEffect(() => {
-    fetch('http://localhost:3000/api/collections')
+
+export const getStaticProps = async () => {
+  let user = 1;
+   const data = await fetch(`http://localhost:3000/api/collections?id=${user}`)
       .then(result => result.json())
-      .then(data => setData(data))
-      .catch(err => console.error(err));
-  }, []);
+    
 
+  return {
+    props: {
+      data: data
+    }
+  };
+};
+
+
+
+
+function Home({data}) {
+
+  const [theme, setTheme] = useState(light)
   const click = () => {
     theme === dark ? setTheme(light) : setTheme(dark);
   };
-  console.log(theme);
+  console.log("theme: ",theme);
+  console.log(data)
+
+
+
+  const collections = data.map(collection => (<Link href={`/collections/${collection.id}`}><div key={collection.id} className={`${theme[`${collection.color}CollectionCard`]} card`} >{collection.id}</div></Link>));
+
   return (
     <>
       <Layout>
@@ -33,17 +50,12 @@ export default function Home() {
           </div>
 
             <div className="card-container">
-              <div className={`${theme.redCollectionCard} card`} > Birds</div>
-              <div className={`${theme.blueCollectionCard} card`}>Birds</div>
-              <div className={`${theme.greenCollectionCard} card`}>Birds</div>
-              <div className={`${theme.yellowCollectionCard} card`}>Birds</div>
-              <div className={`${theme.redCollectionCard} card`} > Birds</div>
-              <div className={`${theme.blueCollectionCard} card`}>Birds</div>
-              <div className={`${theme.greenCollectionCard} card`}>Birds</div>
-              <div className={`${theme.yellowCollectionCard} card`}>Birds</div>
+               {collections}
             </div>
             </div>
       </Layout>
     </>
   );
 };
+
+export default Home;
