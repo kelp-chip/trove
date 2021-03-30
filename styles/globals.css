@@ -14,14 +14,23 @@ body {
   font-size: 1.6rem;
 }
 
+main {
+  width: 85%;
+  margin: 1rem auto;
+  background-color:red;
+  margin-bottom: 3rem;
+}
+
 * {
   box-sizing: border-box;
 }
 
 button {
   margin: 10px 10px;
+  padding: 5px 20px;
   border-radius: 5px;
   border: 1px solid;
+  font-size: inherit;
 }
 
 table {
@@ -40,21 +49,77 @@ td {
   padding: 5px 35px;
 }
 
-.container {
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgb(216, 216, 216);
+  color: rgb(0, 0, 0);
+  text-align: center;
+  height: 3rem;
+}
+
+.card-container {
   display: flex;
   flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin: -1.5rem;
+  margin-top: 2rem;
+  /* background-color: khaki; */
 }
 
 .card {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 5px 5px;
-  height: 100px;
-  width: 150px;
+  margin: 1.5rem 1.5rem;
+  height: 180px;
+  width: 280px;
   border-radius: 5px;
+  font-size: 24px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  cursor: pointer;
 }
 
 .tableContainer {
   width: 75%;
+}
+
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 0;
+}
+
+.path {
+  font-size: 20px;
+  color: #466679;
+  font-weight: 600;
+  /* background-color: rgb(140, 208, 240); */
+}
+
+.passed {
+  color: #7b96a5af;
+  font-weight: 400;
+}
+
+@media only screen and (max-width: 705px) {
+  .card {
+    height: 250px;
+    width: 100%;
+  }
+
+  .passed {
+    display: none;
+  }
+}
+
+#header-placeholder {
+  background-color: #fbfbfb;
+  width: 100%;
+  height: 70px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }

@@ -11,7 +11,7 @@ export default function Layout({ children }) {
       </title>
       </Head>
       <header>
-        Header
+        <div id="header-placeholder"></div>
     </header>
       <main>
         {children}
