@@ -18,7 +18,7 @@ export default function Layout({ children }) {
       <header>
         <div id="header-placeholder"><button onClick={click}>Theme</button></div>
       </header>
-      <main>
+      <main className={theme.main}>
         {children}
       </main>
       <footer>

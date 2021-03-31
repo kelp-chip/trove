@@ -4,6 +4,7 @@ body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+
 }
 
 html {
@@ -32,6 +33,7 @@ button {
   border-radius: 5px;
   border: 1px solid;
   font-size: inherit;
+
 }
 
 table {
@@ -106,6 +108,7 @@ footer {
 .passed {
   color: #7b96a5af;
   font-weight: 400;
+  cursor: pointer;
 }
 
 @media only screen and (max-width: 705px) {

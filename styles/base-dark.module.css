@@ -86,5 +86,15 @@
 }
 
 .page {
-  background-color: rgb(24, 26, 27)
+  background-color: rgb(24, 26, 27);
+
+}
+
+.main {
+
+    width: 85%;
+    margin: 1rem auto;
+    background-color: rgb(24, 26, 27);
+    margin-bottom: 3rem;
+
 }

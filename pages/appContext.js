@@ -6,13 +6,14 @@ const AppContext = createContext();
 
 export function AppWrapper({ children }) {
   const [theme, setTheme] = useState(light);
+  const [collection, setCollection] = useState('');
   const click = () => {
     theme === dark ? setTheme(light) : setTheme(dark);
   };
 
   let sharedState = {
-    theme: theme,
-    click: click,
+    theme,
+    click,
   };
 
   return (
@@ -25,3 +26,5 @@ export function AppWrapper({ children }) {
 export function useAppContext() {
   return useContext(AppContext);
 }
+
+
