@@ -23,7 +23,7 @@ function Home({ data }) {
 
   return (
     <>
-      <div className={theme.page}>
+      {/* <div className={theme.page}> */}
         <div className="page-header">
           <div className="path">
             your collections
@@ -33,7 +33,7 @@ function Home({ data }) {
         <div className="card-container">
           {collections}
         </div>
-      </div>
+      {/* </div> */}
     </>
   );
 };
