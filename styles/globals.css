@@ -13,13 +13,13 @@ html {
 
 body {
   font-size: 1.6rem;
-
+  height: 100vh;
 }
 
 main {
   width: 85%;
   margin: 1rem auto;
-  background-color:white;
+  background-color: inherit;
   margin-bottom: 3rem;
 }
 
@@ -33,7 +33,7 @@ button {
   border-radius: 5px;
   border: 1px solid;
   font-size: inherit;
-  transition: all .2s
+
 }
 
 table {
@@ -108,6 +108,7 @@ footer {
 .passed {
   color: #7b96a5af;
   font-weight: 400;
+  cursor: pointer;
 }
 
 @media only screen and (max-width: 705px) {

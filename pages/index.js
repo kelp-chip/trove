@@ -23,17 +23,17 @@ function Home({ data }) {
 
   return (
     <>
-      <div className={theme.page}>
-        <div className="page-header">
-          <div className="path">
-            your collections
+      {/* <div className={theme.page}> */}
+      <div className="page-header">
+        <div className="path">
+          your collections
             </div>
-          <button className={theme.editBtn}>add collection</button>
-        </div>
-        <div className="card-container">
-          {collections}
-        </div>
+        <button className={theme.editBtn}>add collection</button>
       </div>
+      <div className="card-container">
+        {collections}
+      </div>
+      {/* </div> */}
     </>
   );
 };

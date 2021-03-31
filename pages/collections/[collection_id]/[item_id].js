@@ -1,51 +1,52 @@
 import Head from 'next/head';
-import { useAppContext } from '../appContext.js';
+import { useAppContext } from '../../appContext.js';
 
-export const getStaticPaths = async () => {
-  let user = 1;
-  const collections = await fetch(`http://localhost:3000/api/collections?id=${user}`)
-    .then(result => result.json());
-  // fetch collections from individual users
-  const paths = collections.map((collection) => {
-    return {
-      params: {
-        id: collection.id.toString()
-      }
-    };
-  });
+// export const getStaticPaths = async () => {
+//   let collectionId = 'birds';
+//   const collections = await fetch(`http://localhost:3000/api/collection/${collectionId}`)
+//     .then(result => result.json());
+//   // fetch collections from individual users
+//   console.log("collections: ", collections[0].items);
+//   const paths = collections[0].items.map((item) => {
 
-  return {
-    paths: paths,
-    fallback: false
-  };
-};
+//     return {
+//       params: {
+//         id: item.id.toString()
+//       }
+//     };
+//   });
 
-export const getStaticProps = async (context) => {
-  const id = context.params.id;
-  console.log("context: ", context);
-  // fetch items from individual collections
-  const items = await fetch(`http://localhost:3000/api/collections?id=${id}`)
-    .then(result => result.json());
+//   return {
+//     paths: paths,
+//     fallback: false
+//   };
+// };
 
-
-  return {
-    props: {
-      collection: items
-    }
-  };
-};
+// export const getStaticProps = async (context) => {
+//   const id = context.params.id;
+//   console.log("context: ", context);
+//   // fetch items from individual collections
+//   const items = await fetch(`http://localhost:3000/api/collections/${id}`)
+//     .then(result => result.json());
 
 
+//   return {
+//     props: {
+//       item: items
+//     }
+//   };
+// };
 
 
-export default function Collections({ collection }) {
-  console.log(collection);
+
+export default function Item() {
+
   return (
     <div>
-      <h1>{collection.id} Page</h1>
+      <h1> Page</h1>
     </div>
   );
 }
 
-//Route to access this page
-//localhost:3000/collections/collection_id/item_id
+// //Route to access this page
+// //localhost:3000/collections/collection_id/item_id
