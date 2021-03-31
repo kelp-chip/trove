@@ -4,8 +4,6 @@ export default (req, res) => {
     query: { collection_id },
   } = req
 
-  getCollection({user_id: 1, collection_id: collection_id}, (collection) => res.send(collection));
-
-  // res.send(`${collection_id}`)
-  // res.send("HIIII")
+  console.log("hey")
+  getCollection(1, collection_id, (collection) => res.send(collection));
   }

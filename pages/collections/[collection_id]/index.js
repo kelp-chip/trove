@@ -39,6 +39,10 @@ export default function Collection() {
               <div className={`${theme.blueItemCard} card`}>Joel</div>
               <div className={`${theme.blueItemCard} card`}>Jay</div>
               <div className={`${theme.blueItemCard}  card`}>Sam</div>
+              <div className={`${theme.blueItemCard} card`}>Kyle</div>
+              <div className={`${theme.blueItemCard} card`}>Joel</div>
+              <div className={`${theme.blueItemCard} card`}>Jay</div>
+              <div className={`${theme.blueItemCard}  card`}>Sam</div>
             </div>
             </div>
       </Layout>
