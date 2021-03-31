@@ -1,31 +1,31 @@
 import Head from 'next/head';
 import Link from 'next/link';
 import styles from './layout.module.css';
-import light from '../../styles/base-light.module.css';
-import dark from '../../styles/base-dark.module.css';
 
-import {useState, useEffect} from 'react';
-
-
+import { useAppContext } from '../../pages/appContext.js';
 export default function Layout({ children }) {
+  const { theme, click } = useAppContext();
 
   return (
     <>
+    {/* <html className={theme.page}> */}
       <Head>
         <title>
           Trove
       </title>
       </Head>
+      <body className={theme.page}>
       <header>
-        <div id="header-placeholder"></div>
-        {/* <button onClick={click}>Theme</button> */}
-    </header>
+        <div id="header-placeholder"><button onClick={click}>Theme</button></div>
+      </header>
       <main>
         {children}
       </main>
       <footer>
         Footer
       </footer>
+      </body>
+      {/* </html> */}
     </>
   );
 }

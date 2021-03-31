@@ -12,12 +12,13 @@ html {
 
 body {
   font-size: 1.6rem;
+  height: 100vh;
 }
 
 main {
   width: 85%;
   margin: 1rem auto;
-  background-color:red;
+  background-color: inherit;
   margin-bottom: 3rem;
 }
 
