@@ -34,7 +34,7 @@ function Collection({ data }) {
           <div className="path">
 
             <Link href='/'><span className="passed">your collections / </span></Link>
-              birds
+              {data.id}
             </div>
           <button className={theme.editBtn}>add collection</button>
         </div>
