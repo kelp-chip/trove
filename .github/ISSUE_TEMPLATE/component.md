@@ -15,6 +15,3 @@ Relevant paths
 
 **Extended Description**
 Longer description of the component if needed
-
-**Issue Tracking**
-Include issue number (e.g. #2)
