@@ -1,7 +1,10 @@
 import Head from 'next/head';
 import Link from 'next/link';
+import {useState, useEffect} from 'react';
 import { useRouter } from 'next/router';
 import { useAppContext } from '../../appContext.js';
+import ItemGrid from '../../../components/collection/itemGrid.js';
+import ItemView from '../../../components/collection/itemView.js';
 
 
 export const getServerSideProps = async (context) => {
@@ -18,31 +21,29 @@ export const getServerSideProps = async (context) => {
 };
 
 function Collection({ data }) {
-  console.log('data: ', data);
+  const [selectedItem, setSelectedItem] = useState(null)
   const { theme } = useAppContext();
-  // <Link key={item.id} href={`/collections/${collection.id}`}><div key={collection.id} className={`${theme[`${collection.color}CollectionCard`]} card`} >{collection.id}</div></Link>)
   let color = data.color;
-  const items = data.items.map(item => (<div className={`${theme[`${color}ItemCard`]} card`}>{item.name}</div>));
+
+  const setItem = (e) => {
+
+    let id = (e.target.getAttribute('data-id'));
+    let curItem = data.items.filter(item => item.id === Number(id) )
+
+    setSelectedItem(curItem);
+
+  }
+
+  const items = data.items.map(item => (<div onClick={setItem} data-id={item.id} className={`${theme[`${color}ItemCard`]} card`}>{item.name}</div>));
 
 
-
-
+  console.log(selectedItem)
   return (
-    <div>
-      <div className={theme.page}>
-        <div className="page-header">
-          <div className="path">
+    <>
+    {/* <ItemGrid items={items} name={data.id}/> */}
+    <ItemView selectedItem={selectedItem} items={items} name={data.id}/>
 
-            <Link href='/'><span className="passed">your collections / </span></Link>
-              {data.id}
-            </div>
-          <button className={theme.editBtn}>add collection</button>
-        </div>
-        <div className="card-container">
-          {items}
-        </div>
-      </div>
-    </div>
+    </>
   );
 }
 
@@ -55,3 +56,4 @@ export default Collection;
 
 // import Head from 'next/head';
 
+  // <Link key={item.id} href={`/collections/${collection.id}`}><div key={collection.id} className={`${theme[`${collection.color}CollectionCard`]} card`} >{collection.id}</div></Link>)

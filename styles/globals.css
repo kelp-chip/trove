@@ -4,7 +4,6 @@ body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-
 }
 
 html {
@@ -33,23 +32,24 @@ button {
   border-radius: 5px;
   border: 1px solid;
   font-size: inherit;
-
 }
 
 table {
   border-spacing: 5px 5px;
   border-collapse: separate;
+  width: 100%;
 }
-
 
 th {
   padding: 5px 50px;
   vertical-align: top;
   margin-right: 8px;
+  width: 30%;
 }
 
 td {
   padding: 5px 35px;
+  width: 70%;
 }
 
 footer {
@@ -85,8 +85,12 @@ footer {
   font-size: 24px;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   cursor: pointer;
+  transition: transform 0.2s;
 }
 
+.card:hover {
+  transform: translateY(-10px);
+}
 .tableContainer {
   width: 75%;
 }
@@ -127,4 +131,36 @@ footer {
   width: 100%;
   height: 70px;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.aside {
+  background-color: rgb(238, 238, 238);
+  /* flex: 2; */
+  height: 80vh;
+  width: 340px;
+  overflow: scroll;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.item {
+  /* background-color: aqua; */
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.item-view-container {
+  display: flex;
+}
+
+.item-inner-container {
+  width: 80%;
+}
+
+.image-carousel {
+  background-color: black;
+  width: 100%;
+  height: 300px;
 }
