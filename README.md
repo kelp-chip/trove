@@ -5,14 +5,13 @@
 
 1. fork and clone the repo
 2. Run ```npm install``` script in the terminal
-3. create a .env.local file
+3. create a .env file
 
 copy and paste the following into it:
 ```
 DB_USER=<Ask Trove Team>
 DB_PASSWORD=<Ask Trove Team>
 ```
-
 
 
 ____________________________________________________________________________________________________________
