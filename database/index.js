@@ -23,7 +23,7 @@ const getCollection = function (user_id, collection_id, cb) {
     const collection = client.db("trove").collection("users");
     collection.findOne({ _id: (user_id) })
       .then(results => {
-        let collection = results.collections.filter(collection => collection.id === collection_id);
+        let collection = results.collections.filter(collection => collection.id === Number(collection_id));
         cb(collection);
       });
   });

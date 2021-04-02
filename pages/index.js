@@ -19,7 +19,7 @@ export const getStaticProps = async () => {
 function Home({ data }) {
   const { theme } = useAppContext();
 
-  const collections = data.map(collection => (<Link key={collection.id} href={`/collections/${collection.id}`}><div key={collection.id} className={`${theme[`${collection.color}CollectionCard`]} card`} >{collection.id}</div></Link>));
+  const collections = data.map(collection => (<Link key={collection.id} href={`/collections/${collection.id}`}><div key={collection.id} className={`${theme[`${collection.color}CollectionCard`]} card`} >{collection.name}</div></Link>));
 
   return (
     <>

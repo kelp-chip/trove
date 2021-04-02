@@ -2,9 +2,9 @@ import Head from 'next/head';
 import Link from 'next/link';
 import {useState, useEffect} from 'react';
 import { useRouter } from 'next/router';
-import { useAppContext } from '../../appContext.js';
-import ItemGrid from '../../../components/collection/itemGrid.js';
-import ItemView from '../../../components/collection/itemView.js';
+import { useAppContext } from '../appContext.js';
+import ItemGrid from '../../components/collection/itemGrid.js';
+import ItemView from '../../components/collection/itemView.js';
 
 
 export const getServerSideProps = async (context) => {
@@ -38,10 +38,9 @@ function Collection({ data }) {
   const items = data.items.map(item => (<div onClick={setItem} data-id={item.id} className={`${theme[`${color}ItemCard`]} card`}>{item.name}</div>));
 
 
-  console.log(selectedItem)
   return (
     <>
-    {selectedItem? <ItemView selectedItem={selectedItem} items={items} unselect={unselect} name={data.id}/> : <ItemGrid items={items} name={data.id}/>}
+    {selectedItem? <ItemView selectedItem={selectedItem} items={items} unselect={unselect} name={data.name}/> : <ItemGrid items={items} name={data.name}/>}
 
     </>
   );
