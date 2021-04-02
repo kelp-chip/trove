@@ -26,12 +26,13 @@ function Collection({ data }) {
   let color = data.color;
 
   const setItem = (e) => {
-
     let id = (e.target.getAttribute('data-id'));
     let curItem = data.items.filter(item => item.id === Number(id) )
-
     setSelectedItem(curItem);
+  }
 
+  const unselect = () => {
+    setSelectedItem(null);
   }
 
   const items = data.items.map(item => (<div onClick={setItem} data-id={item.id} className={`${theme[`${color}ItemCard`]} card`}>{item.name}</div>));
@@ -40,8 +41,7 @@ function Collection({ data }) {
   console.log(selectedItem)
   return (
     <>
-    {/* <ItemGrid items={items} name={data.id}/> */}
-    <ItemView selectedItem={selectedItem} items={items} name={data.id}/>
+    {selectedItem? <ItemView selectedItem={selectedItem} items={items} unselect={unselect} name={data.id}/> : <ItemGrid items={items} name={data.id}/>}
 
     </>
   );
