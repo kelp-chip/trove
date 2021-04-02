@@ -94,3 +94,11 @@ color: #000000;
   margin-bottom: 3rem;
 
 }
+
+.input {
+    min-width: 580px;
+    background-color: transparent;
+    outline: none;
+    border: 1px solid grey;
+    border-radius: 3px;
+}

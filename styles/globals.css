@@ -117,6 +117,33 @@ footer {
   cursor: pointer;
 }
 
+.form-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 0;
+}
+
+.form-top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+.form-bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+input {
+  min-width: 580px;
+}
+
+.bar {
+  max-width: 580px;
+}
+
 @media only screen and (max-width: 705px) {
   .card {
     height: 250px;
