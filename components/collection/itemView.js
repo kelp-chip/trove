@@ -17,9 +17,13 @@ export default function ItemView({items, name, selectedItem, unselect}) {
       <div className="page-header">
           <div className="path">
               <Link href='/'><span className="passed">your collections / </span></Link>
-              {name}
+              <span onClick={unselect} className="passed">{name} / </span>
+              {selectedItem[0].name}
           </div>
-          <button className={theme.editBtn} onClick={unselect}>close</button>
+          <div>
+          <button className={theme.editBtn}>add item</button>
+          <button className={theme.closeBtn} onClick={unselect}>close</button>
+          </div>
         </div>
     <div className='item-view-container'>
     <div className='aside'>

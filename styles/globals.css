@@ -12,7 +12,7 @@ html {
 
 body {
   font-size: 1.6rem;
-  height: 100vh;
+  height: 100%;
 }
 
 main {
@@ -38,7 +38,8 @@ button {
 table {
   border-spacing: 5px 5px;
   border-collapse: separate;
-  width: 100%
+  width: 100%;
+  padding-top: 1rem;
 }
 
 th {
@@ -136,7 +137,7 @@ footer {
 }
 
 .aside {
-  background-color: rgb(238, 238, 238);
+  background-color: #f7f7f7;
   /* flex: 2; */
   height: 68vh;
   width: 340px;
@@ -144,14 +145,16 @@ footer {
   text-align: center;
   display: flex;
   justify-content: center;
+  /* position: fixed; */
 }
 
 .item {
   /* background-color: aqua; */
   flex: 1;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   height: 1900px;
+  padding-right: 1rem;
 }
 
 .item-view-container {
@@ -159,17 +162,16 @@ footer {
 }
 
 .item-inner-container {
-  width: 80%;
+  width: 95%;
 }
 
 .image-carousel {
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.8);
   width: 100%;
   height: 300px;
   display: flex;
   justify-content: center;
 }
-
 
 .displayImg {
   max-height: 300px;

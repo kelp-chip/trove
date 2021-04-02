@@ -13,7 +13,7 @@ export default function ItemGrid({items, name}) {
           <Link href='/'><span className="passed">your collections / </span></Link>
             {name}
           </div>
-        <button className={theme.editBtn}>add collection</button>
+        <button className={theme.editBtn}>add item</button>
       </div>
       <div className="card-container">
         {items}

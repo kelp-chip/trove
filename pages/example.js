@@ -19,7 +19,7 @@ export default function Home() {
   const click = () => {
     theme === dark ? setTheme(light) : setTheme(dark);
   };
-  console.log(theme);
+
   return (
     <>
 
