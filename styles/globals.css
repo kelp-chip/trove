@@ -32,23 +32,24 @@ button {
   border-radius: 5px;
   border: 1px solid;
   font-size: inherit;
+  cursor: pointer;
 }
 
 table {
   border-spacing: 5px 5px;
   border-collapse: separate;
-  width: 100%;
+  width: 100%
 }
 
 th {
-  padding: 5px 50px;
+  padding: 10px 50px;
   vertical-align: top;
   margin-right: 8px;
   width: 30%;
 }
 
 td {
-  padding: 5px 35px;
+  padding: 10px 35px;
   width: 70%;
 }
 
@@ -86,6 +87,7 @@ footer {
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   cursor: pointer;
   transition: transform 0.2s;
+  text-align: center;
 }
 
 .card:hover {
@@ -136,7 +138,7 @@ footer {
 .aside {
   background-color: rgb(238, 238, 238);
   /* flex: 2; */
-  height: 80vh;
+  height: 68vh;
   width: 340px;
   overflow: scroll;
   text-align: center;
@@ -149,6 +151,7 @@ footer {
   flex: 1;
   display: flex;
   justify-content: center;
+  height: 1900px;
 }
 
 .item-view-container {
@@ -163,4 +166,11 @@ footer {
   background-color: black;
   width: 100%;
   height: 300px;
+  display: flex;
+  justify-content: center;
+}
+
+
+.displayImg {
+  max-height: 300px;
 }
