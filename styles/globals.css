@@ -12,6 +12,14 @@ html {
 
 body {
   font-size: 1.6rem;
+  height: 100%;
+}
+
+main {
+  width: 85%;
+  margin: 1rem auto;
+  background-color: inherit;
+  margin-bottom: 3rem;
 }
 
 * {
@@ -20,41 +28,178 @@ body {
 
 button {
   margin: 10px 10px;
+  padding: 5px 20px;
   border-radius: 5px;
   border: 1px solid;
+  font-size: inherit;
+  cursor: pointer;
 }
 
 table {
   border-spacing: 5px 5px;
   border-collapse: separate;
+  width: 100%;
+  padding-top: 1rem;
 }
 
-
 th {
-  padding: 5px 50px;
+  padding: 10px 50px;
   vertical-align: top;
   margin-right: 8px;
+  width: 30%;
 }
 
 td {
-  padding: 5px 35px;
+  padding: 10px 35px;
+  width: 70%;
 }
 
-.container {
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgb(216, 216, 216);
+  color: rgb(0, 0, 0);
+  text-align: center;
+  height: 3rem;
+  margin-top: auto;
+}
+
+.card-container {
   display: flex;
   flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin: -1.5rem;
+  margin-top: 2rem;
+  /* background-color: khaki; */
 }
 
 .card {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 5px 5px;
-  height: 100px;
-  width: 150px;
+  margin: 1.5rem 1.5rem;
+  height: 180px;
+  width: 280px;
   border-radius: 5px;
+  font-size: 24px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  cursor: pointer;
+  transition: transform 0.2s;
+  text-align: center;
 }
 
+.card:hover {
+  transform: translateY(-10px);
+}
 .tableContainer {
   width: 75%;
+}
+
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 0;
+}
+
+.path {
+  font-size: 20px;
+  color: #466679;
+  font-weight: 600;
+  /* background-color: rgb(140, 208, 240); */
+}
+
+.passed {
+  color: #7b96a5af;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.form-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 0;
+}
+
+.form-top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+.form-bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+input {
+  min-width: 580px;
+}
+
+.bar {
+  max-width: 580px;
+}
+
+@media only screen and (max-width: 705px) {
+  .card {
+    height: 250px;
+    width: 100%;
+  }
+
+  .passed {
+    display: none;
+  }
+}
+
+#header-placeholder {
+  background-color: #fbfbfb;
+  width: 100%;
+  height: 70px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.aside {
+  background-color: #f7f7f7;
+  /* flex: 2; */
+  height: 68vh;
+  width: 340px;
+  overflow: scroll;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  /* position: fixed; */
+}
+
+.item {
+  /* background-color: aqua; */
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  height: 1900px;
+  padding-right: 1rem;
+}
+
+.item-view-container {
+  display: flex;
+}
+
+.item-inner-container {
+  width: 95%;
+}
+
+.image-carousel {
+  background-color: rgba(0, 0, 0, 0.8);
+  width: 100%;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+}
+
+.displayImg {
+  max-height: 300px;
 }

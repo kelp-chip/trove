@@ -86,5 +86,23 @@
 }
 
 .page {
-  background-color: rgb(24, 26, 27)
+  background-color: rgb(24, 26, 27);
+
+}
+
+.main {
+
+    width: 85%;
+    margin: 1rem auto;
+    background-color: rgb(24, 26, 27);
+    margin-bottom: 3rem;
+
+}
+
+.input {
+  min-width: 580px;
+  background-color: transparent;
+  outline: none;
+  border: 1px solid grey;
+  border-radius: 3px;
 }
