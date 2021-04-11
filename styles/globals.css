@@ -198,8 +198,57 @@ input {
   height: 300px;
   display: flex;
   justify-content: center;
+  position: relative;
 }
+
 
 .displayImg {
   max-height: 300px;
 }
+
+.carousel-indicators{
+  text-align: center;
+  margin-top: 15px;
+}
+
+.next-image, .prev-image{
+  display: none;
+  cursor: pointer;
+}
+
+.image-carousel:hover .next-image{
+  display: block;
+}
+
+.image-carousel:hover .prev-image{
+  display: block;
+}
+
+.image-carousel button{
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+  }
+
+
+
+.prev-image{
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.next-image{
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
