@@ -102,3 +102,15 @@ color: #000000;
     border: 1px solid grey;
     border-radius: 3px;
 }
+
+/****** Image Carousel ******/
+
+.indicatorInactive{
+  fill: #C2C2C2;
+  cursor: pointer;
+}
+
+.indicatorActive{
+  fill: #323232;
+  cursor: pointer;
+}

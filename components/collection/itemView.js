@@ -1,15 +1,15 @@
 import {useAppContext} from '../../pages/appContext.js';
 import Link from 'next/link';
 import {useState, useEffect} from 'react';
+import {Carousel} from './Carousel.js';
 
 export default function ItemView({items, name, selectedItem, unselect}) {
 
   const {theme} = useAppContext();
-  var imageUrl ='https://st4.depositphotos.com/14953852/24787/v/600/depositphotos_247872612-stock-illustration-no-image-available-icon-vector.jpg'
-
+  var images = ['https://st4.depositphotos.com/14953852/24787/v/600/depositphotos_247872612-stock-illustration-no-image-available-icon-vector.jpg'];
   const tableData = selectedItem ? selectedItem[0].information.map(info => (<tr className={theme.tr}><th>{info.key}</th><td>{info.value}</td></tr>)) : <span> loading..</span>
-  if(selectedItem && selectedItem[0].images.length > 0) {
-      imageUrl = selectedItem[0].images[0]
+  if (selectedItem && selectedItem[0].images.length > 0) {
+    images = selectedItem[0].images
   }
 
   return (
@@ -33,13 +33,11 @@ export default function ItemView({items, name, selectedItem, unselect}) {
     </div>
     <div className='item'>
         <div className='item-inner-container'>
-            <div className='image-carousel'><img className="displayImg" src={imageUrl}></img></div>
+          <Carousel images={images}/>
             <table>
             {tableData ? tableData : <span> Loading</span>}
           </table>
         </div>
-
-
     </div>
     </div>
     </>
